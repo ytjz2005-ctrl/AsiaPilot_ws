@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="e2e_planner" type="mavros_nn_planner_f.py" name="e2e_mavros_planner_f"
+          output="screen" launch-prefix="gnome-terminal --">
+        <param name="weight" value="$(find e2e_planner)/weights/checkpoint0004.pth"/>
+        <param name="target_speed" value="2.0"/>
+        <param name="margin" value="0.5"/>
+        <param name="hover_throttle" value="0.79"/>
+    </node>
+</launch>

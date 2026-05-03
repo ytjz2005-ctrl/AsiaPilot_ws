@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="e2e_planner" type="test.py" name="test"
+          output="screen" launch-prefix="gnome-terminal --"/>
+</launch>

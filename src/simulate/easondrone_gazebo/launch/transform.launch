@@ -1,0 +1,19 @@
+<launch>
+	<node pkg="tf2_ros" type="static_transform_publisher" name="world2map"
+		args="0 0 0 0 0 0 world map"/>
+
+	<node pkg="tf2_ros" type="static_transform_publisher" name="map2slam"
+		args="0 0 0 0 0 0 map camera_init"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base2d435i"
+		args="0.11 0 0 -1.57 0 -1.57 base_link realsense_camera_frame"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base2mid360"
+		args="0 0 0.092 0 0 0 base_link laser_livox"/>
+
+	<node pkg="tf2_ros" type="static_transform_publisher" name="base2vlp16"
+		args="0 0 0.045 0 0 0 base_link VLP16_link"/>
+
+	<node pkg="tf2_ros" type="static_transform_publisher" name="base2monocular"
+		args="0 0 -0.045 1.57 3.14 0 base_link monocular_link"/>
+</launch>

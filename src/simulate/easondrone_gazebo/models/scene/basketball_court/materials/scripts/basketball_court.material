@@ -1,0 +1,14 @@
+material Ground/basketball_court
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture basketball_court.png
+      }
+    }
+  }
+}

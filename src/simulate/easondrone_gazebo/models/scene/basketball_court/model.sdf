@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='basketball_court'>
+    <pose>0 0 0 0 0 0</pose>
+    <static>true</static>
+    <link name='link_1'>
+      <inertial>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.166667</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.166667</iyy>
+          <iyz>0</iyz>
+          <izz>0.166667</izz>
+        </inertia>
+        <pose>0 0 0 0 -0 0</pose>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>30 15 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='visual'>
+        <geometry>
+          <box>
+            <size>30 15 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://basketball_court/materials/scripts</uri>
+            <uri>model://basketball_court/materials/textures</uri>
+            <name>Ground/basketball_court</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

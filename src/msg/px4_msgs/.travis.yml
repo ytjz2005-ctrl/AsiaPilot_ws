@@ -1,0 +1,45 @@
+sudo: required
+
+# CI runs over all branches that contain 'ros1' in the name
+branches:
+  only:
+  - /.*ros1.*/
+
+env:
+  global:
+    - CCACHE_DIR=${HOME}/.ccache
+    - BUILD="mkdir -p ~/catkin_ws/src; cd ~/catkin_ws; ln -s ${TRAVIS_BUILD_DIR} src/px4_msgs; catkin build"
+
+matrix:
+  include:
+    - name: Build on ROS Kinetic
+      os: linux
+      language: cpp
+      services:
+        - docker
+      cache:
+      ccache: true
+      env:
+        - ROS_DISTRO=kinetic
+        - ROS_ENV=/opt/ros/${ROS_DISTRO}/setup.bash
+        - DOCKER_CONTAINER=px4io/px4-dev-ros-kinetic:2020-03-16
+    - name: Build on ROS Melodic
+      os: linux
+      language: cpp
+      services:
+        - docker
+      cache:
+      ccache: true
+      env:
+        - ROS_DISTRO=melodic
+        - ROS_ENV=/opt/ros/${ROS_DISTRO}/setup.bash
+        - DOCKER_CONTAINER=px4io/px4-dev-ros-melodic:2020-03-16
+
+script:
+  - docker run -it --rm -w ${TRAVIS_BUILD_DIR}
+    --name=px4_ros_container
+    --env=CCACHE_DIR="${CCACHE_DIR}"
+    --env=LOCAL_USER_ID="$(id -u)"
+    --volume=${CCACHE_DIR}:${CCACHE_DIR}:rw
+    --volume=${TRAVIS_BUILD_DIR}:${TRAVIS_BUILD_DIR}:rw
+    ${DOCKER_CONTAINER} /bin/bash -ce "source ${ROS_ENV}; ${BUILD}";

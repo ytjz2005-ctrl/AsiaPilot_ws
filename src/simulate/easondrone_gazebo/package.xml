@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>easondrone_gazebo</name>
+  <version>1.2.2</version>
+  <description>
+    The easondrone_gazebo package
+  </description>
+
+  <maintainer email="12010508@mail.sustech.edu.cn">Eason Hua</maintainer>
+
+  <license>GPLv3</license>
+
+  <url type="repository">https://github.com/HuaYuXiao/easondrone_gazebo.git</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+
+  <export>
+    <gazebo_ros gazebo_model_path="${prefix}/models/drone"/>
+    <gazebo_ros gazebo_model_path="${prefix}/models/scene"/>
+    <gazebo_ros gazebo_model_path="${prefix}/models/sensor"/>
+    <gazebo_ros gazebo_model_path="${prefix}/models/texture"/>
+    <gazebo_ros gazebo_media_path="${prefix}"/>
+  </export>
+</package>

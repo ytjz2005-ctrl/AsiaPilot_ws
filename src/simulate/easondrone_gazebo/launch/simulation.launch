@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find easondrone_gazebo)/launch/spawn_iris.launch">
+        <!-- <arg name="world" value="$(find aws_robomaker_bookstore_world)/worlds/bookstore.world"/> -->
+        <!-- <arg name="world" value="$(find easondrone_gazebo)/worlds/ego_swarm.world"/> -->
+        <arg name="world" value="$(find easondrone_gazebo)/worlds/222.world"/>
+        <arg name="sdf" value="$(find easondrone_gazebo)/models/drone/iris_d435i_mid360/iris_d435i_mid360.sdf"/>
+    </include>
+
+    <!-- <include file="$(find px4ctrl)/launch/px4ctrl.launch"/> -->
+    <include file="$(find e2e_planner)/launch/e2e_planner_f.launch"/>
+    <!-- <include file="$(find e2e_planner)/launch/e2e_planner.launch"/> -->
+    <!-- <include file="$(find e2e_planner)/launch/test.launch"/> -->
+
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find easondrone_gazebo)/config/easondrone.rviz"/>
+</launch>

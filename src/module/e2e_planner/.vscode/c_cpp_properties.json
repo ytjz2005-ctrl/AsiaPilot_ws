@@ -1,0 +1,60 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/root/easondrone_ws/devel_isolated/uav_simulator/include/**",
+        "/root/easondrone_ws/devel_isolated/ego_planner/include/**",
+        "/root/easondrone_ws/devel_isolated/rotors_comm/include/**",
+        "/root/easondrone_ws/devel_isolated/easondrone_msgs/include/**",
+        "/root/easondrone_ws/devel_isolated/quadrotor_msgs/include/**",
+        "/root/easondrone_ws/devel_isolated/px4_msgs/include/**",
+        "/root/easondrone_ws/devel_isolated/mav_system_msgs/include/**",
+        "/root/easondrone_ws/devel_isolated/mav_state_machine_msgs/include/**",
+        "/root/easondrone_ws/devel_isolated/mav_planning_msgs/include/**",
+        "/root/easondrone_ws/devel_isolated/mav_msgs/include/**",
+        "/root/easondrone_ws/devel_isolated/livox_ros_driver2/include/**",
+        "/root/easondrone_ws/devel_isolated/fast_lio/include/**",
+        "/root/easondrone_ws/devel_isolated/livox_ros_driver/include/**",
+        "/root/easondrone_ws/devel_isolated/husky_msgs/include/**",
+        "/root/easondrone_ws/devel_isolated/detection_msgs/include/**",
+        "/root/easondrone_ws/devel_isolated/bspline/include/**",
+        "/opt/ros/noetic/include/**",
+        "/root/easondrone_ws/src/reconstruct/active_perception/include/**",
+        "/root/easondrone_ws/src/plan/apf_local_planner/include/**",
+        "/root/easondrone_ws/src/plan/bspline/include/**",
+        "/root/easondrone_ws/src/plan/bspline_opt/include/**",
+        "/root/easondrone_ws/src/vision/camera_models/include/**",
+        "/root/easondrone_ws/src/reconstruct/easondrone_mapping/include/**",
+        "/root/easondrone_ws/src/plan/ego-planner/include/**",
+        "/root/easondrone_ws/src/slam/FAST_LIO/include/**",
+        "/root/easondrone_ws/src/lidar/livox_laser_simulation/include/**",
+        "/root/easondrone_ws/src/msg/mav_comm/mav_msgs/include/**",
+        "/root/easondrone_ws/src/msg/mav_comm/mav_planning_msgs/include/**",
+        "/root/easondrone_ws/src/plan/path_searching/include/**",
+        "/root/easondrone_ws/src/reconstruct/plan_env/include/**",
+        "/root/easondrone_ws/src/plan/poly_traj/include/**",
+        "/root/easondrone_ws/src/module/pose_utils/include/**",
+        "/root/easondrone_ws/src/module/px4ctrl/include/**",
+        "/root/easondrone_ws/src/msg/quadrotor_msgs/include/**",
+        "/root/easondrone_ws/src/simulate/rotors_simulator/rotors_control/include/**",
+        "/root/easondrone_ws/src/simulate/rotors_simulator/rotors_gazebo_plugins/include/**",
+        "/root/easondrone_ws/src/simulate/rotors_simulator/rotors_hil_interface/include/**",
+        "/root/easondrone_ws/src/simulate/rotors_simulator/rotors_joy_interface/include/**",
+        "/root/easondrone_ws/src/plan/traj_utils/include/**",
+        "/root/easondrone_ws/src/simulate/uav_simulator/include/**",
+        "/root/catkin_ws/src/wpr_simulation/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
