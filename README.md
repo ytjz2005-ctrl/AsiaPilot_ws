@@ -107,6 +107,13 @@ roslaunch easondrone_gazebo simulation.launch
 
 ---
 
+## 🧠 Model Training
+The pre-trained model weights included in this repository are ready for direct inference. If you wish to train your own models, please refer to the official training framework:
+
+👉 [DiffPhysDrone - Training Framework](https://github.com/HenryHuYu/DiffPhysDrone)
+
+---
+
 ## 👨‍💻 Author
 
 - **Janzhe Yutao**
