@@ -7,7 +7,6 @@
         <arg name="sdf" value="$(find easondrone_gazebo)/models/drone/iris_d435i_mid360/iris_d435i_mid360.sdf"/>
     </include>
 
-    <!-- <include file="$(find px4ctrl)/launch/px4ctrl.launch"/> -->
     <include file="$(find e2e_planner)/launch/e2e_planner_f.launch"/>
     <!-- <include file="$(find e2e_planner)/launch/e2e_planner.launch"/> -->
     <!-- <include file="$(find e2e_planner)/launch/test.launch"/> -->
