@@ -126,7 +126,7 @@ The pre-trained model weights included in this repository are ready for direct i
 
 ## 👨‍💻 Author
 
-- **Janzhe Yutao**
+- **Jianzhe Yutao**
 
 ---
 
