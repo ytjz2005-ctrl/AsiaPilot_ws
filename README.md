@@ -9,16 +9,15 @@ This project is an improved and engineering-oriented implementation based on the
 
 Although the original project is outstanding in theory and algorithms, it lacks specific approaches and interfaces for direct deployment on real-world UAV flight controllers. Starting from this point, **this project successfully builds a bridge between the obstacle avoidance planner and the low-level flight controller via MAVROS. It provides highly clear control logic and runs successfully in the Gazebo simulation environment.** This project aims to bridge the "last mile" from cutting-edge algorithms to real-world UAV deployment.
 
-<table>
-  <tr>
-    <td align="center"><b>🚀 Forward Flight</b></td>
-    <td align="center"><b>📍 Position Control</b></td>
-  </tr>
-  <tr>
-    <td><img src="./img/fly_forward.gif" width="100%"></td>
-    <td><img src="./img/fly_pos.gif" width="100%"></td>
-  </tr>
-</table>
+## 🎥 Demo
+
+**🚀 Forward Flight**
+
+![Forward Flight](./img/fly_forward.gif)
+
+**📍 Position Control**
+
+![Position Control](./img/fly_pos.gif)
 
 ## ✨ Highlights
 
